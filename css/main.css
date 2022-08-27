@@ -1,0 +1,113 @@
+html {
+    position: relative;
+    width: 1440px;
+    height: 1200px;
+    background-color: #EBEBEB;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #2B2B2B;
+}
+
+.pic img {
+    position: absolute;
+    width: 370px;
+    height: 450px;
+    left: 100px;
+    top: 100px;
+    border-radius: 17px;
+}
+
+.Me {
+    position: absolute;
+    width: 700px;
+    height: 56px;
+    left: 611px;
+    top: 100px;
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.about {
+    width: 450px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 50px;
+
+}
+
+.line {
+    position: absolute;
+    width: 1248px;
+    left: 96px;
+    top: 640px;
+    border: 1px solid #2B2B2B;
+}
+
+.educ {
+    position: absolute;
+    width: 199px;
+    height: 38px;
+    left: 271px;
+    top: 667px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.educ1 {
+    position: absolute;
+    width: 733px;
+    height: 80px;
+    left: 611px;
+    top: 665px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.course {
+    position: absolute;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.line1 {
+    position: absolute;
+    width: 1248px;
+    height: 0px;
+    left: 96px;
+    top: 848px;
+
+    border: 1px solid #2B2B2B;
+}
+
+.inf {
+    position: absolute;
+    width: 197px;
+    height: 38px;
+    left: 273px;
+    top: 873px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.info {
+    position: absolute;
+    width: 800px;
+    height: 28px;
+    left: 611px;
+    top: 873px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+
+}
