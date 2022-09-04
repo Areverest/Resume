@@ -1,8 +1,8 @@
 html {
-    position: relative;
-    width: 1440px;
-    height: 1200px;
     background-color: #EBEBEB;
+}
+
+body{
     font-family: 'Roboto';
     font-style: normal;
     color: #2B2B2B;
@@ -17,7 +17,7 @@ html {
     border-radius: 17px;
 }
 
-.Me {
+.me {
     position: absolute;
     width: 700px;
     height: 56px;
@@ -38,7 +38,7 @@ html {
 
 }
 
-.line {
+.line_0 {
     position: absolute;
     width: 1248px;
     left: 96px;
@@ -46,7 +46,7 @@ html {
     border: 1px solid #2B2B2B;
 }
 
-.educ {
+.name {
     position: absolute;
     width: 199px;
     height: 38px;
@@ -58,7 +58,7 @@ html {
     line-height: 38px;
 }
 
-.educ1 {
+.education {
     position: absolute;
     width: 733px;
     height: 80px;
@@ -75,10 +75,10 @@ html {
 
     font-weight: 400;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 50px;
 }
 
-.line1 {
+.line_1 {
     position: absolute;
     width: 1248px;
     height: 0px;
@@ -88,7 +88,7 @@ html {
     border: 1px solid #2B2B2B;
 }
 
-.inf {
+.name_info {
     position: absolute;
     width: 197px;
     height: 38px;
