@@ -1,129 +1,83 @@
-/*здесь и далее по файлу требуется читать БЭМ, теги не используются в вёрстке, почти всегда используются классы*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-html {
-    /*лишнее, так и сработает по умолчанию*/
-    position: relative;
 
-    /*это плохо, лишаешь сайт адаптивности, лучше через max-width*/
-    width: 1440px;
-
-    /*ограничение по высоте происходит крайне редко, потому что контент может занимать динамическую высоту, это лишнее*/
-    height: 1200px;
-
-    /*далее свойста относятся к body, а не к html*/
-    background-color: #EBEBEB;
-    font-family: 'Roboto';
+body {
+    margin: 0 auto;
+    padding: 5.2vw;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: #2B2B2B;
+    max-width: 1440px;
 }
 
-.pic img {
-    /*нет, это совсем неверно, абсолютное позиционирование здесь излишне, надо позиционировать через grid/flex*/
-    /*у тебя две колонки, display: flex как раз делает эти колонки*/
-    position: absolute;
-    width: 370px;
-    height: 450px;
-    left: 100px;
-    top: 100px;
-    border-radius: 17px;
-}
-
-.Me {
-    /*тоже самое что и соседний блок*/
-    position: absolute;
-    width: 700px;
-    height: 56px;
-    left: 611px;
-    top: 100px;
-
+h1 {
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
 }
 
-.about {
-    width: 450px;
-
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 50px;
-
-}
-
-.line {
-    /*теперь понял, идею компоновки понимаешь некорректно, absolute позиционирование редкое и служит скорее для наложения блоков друг на друга,
-     нужно разбирать flex/grid паттерны,*/
-    /*т.к. при удалении любого блока посередине вёрстки - вся вёрстка должна сдвигаться выше и не оставлять пустоты на своём месте.*/
-    /*что будет если сейчас попытаться блоки поменять местами?*/
-    position: absolute;
-    width: 1248px;
-    left: 96px;
-    top: 640px;
-    border: 1px solid #2B2B2B;
-}
-
-.educ {
-    position: absolute;
-    width: 199px;
-    height: 38px;
-    left: 271px;
-    top: 667px;
-
+h2 {
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
 }
 
-.educ1 {
-    position: absolute;
-    width: 733px;
-    height: 80px;
-    left: 611px;
-    top: 665px;
-
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-}
-
-.course {
-    position: absolute;
-
+p {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
 }
 
-.line1 {
-    position: absolute;
-    width: 1248px;
-    height: 0px;
-    left: 96px;
-    top: 848px;
-
-    border: 1px solid #2B2B2B;
+a {
+    color: #2B2B2B;
 }
 
-.inf {
-    position: absolute;
-    width: 197px;
-    height: 38px;
-    left: 273px;
-    top: 873px;
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7.2vw;
+    border-bottom: 1px solid #2B2B2B;
+    padding-bottom: 4.69vw;
+}
 
-    font-weight: 500;
+.me img {
+    width: 370px;
+    height: 450px;
+    border-radius: 17px;
+}
+
+.me p {
+    font-weight: 400;
     font-size: 32px;
     line-height: 38px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #2B2B2B;
+    padding-bottom: 2.61vw;
+    padding-left: 5vw;
+    gap: 7.2vw;
 }
 
 .info {
-    position: absolute;
-    width: 800px;
-    height: 28px;
-    left: 611px;
-    top: 873px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 38px;
-
+    display: flex;
+    flex-direction: row;
+    padding-left: 5vw;
+    gap: 7.2vw;
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--у тебя ru, из en только title-->
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,56 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--    Resume -> правильно CV или Summary-->
-    <title>Resume</title>
+    <title>CV</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <div class="pic">
-<!--        плохое имя файла j2Bvo8SghEo.jpg это должен быть user/avatar/photo .jpg, плохая практика нечитаемые имена-->
-<!--        нужен alt тег-->
-        <img src="./j2Bvo8SghEo.jpg">
-    </div>
-
-<!--    Me -> me, не используются заглавные буквы в классах и в css-->
-    <div class="Me">
-
-        Цыганов Алексей Алексеевич
+    <div class="me">
+        <img src="./images/photo.jpg" alt="">
         <div class="about">
-            Город: Саранск
-            <br> Email: <a href="mailto:dended95@gmail.com"> dended95@gmail.com</a>
-
-<!--            tel: указывается без форматирования, правильно будет tel:79510509164-->
-            Телефон: <a href="tel:+7(951)050-91-64">+7(951)050-91-64</a>
-
-<!--            target = _blank, потому что должно открываться в соседней вкладке, не вместо текущего сайта-->
-            GitHub: <a href=https://github.com/Areverest>github.com/Areverest</a>
+            <h1>Цыганов Алексей Алексеевич</h1>
+            <p>Город: Саранск</p>
+            <p>Email: <a href="mailto:dended95@gmail.com"> dended95@gmail.com</a></p>
+            <p>Телефон: <a href="tel:79510509164">+7(951)050-91-64</a></p>
+            <p>GitHub: <a href=https://github.com/Areverest target="_blank">github.com/Areverest</a></p>
         </div>
     </div>
-    <div class="line"></div>
-    <div class="educ">Образование</div>
-<!--    educ1 плохое именование-->
-    <div class="educ1" >
-        Фундаментальная информатика и информационные технологии
-
-<!--        инлайн стили не используются в 99.9% случаев, для этого есть css файлы-->
-<!--        Мгу -> МГУ-->
-        <div class="course" style="line-height: 50px;">Мгу им. Н.П.Огарева 4 курс</div>
+    <div class="education">
+        <h2>Образование</h2>
+        <div>
+            <h2>Фундаментальная информатика и информационные технологии</h2>
+            <p>МГУ им. Н.П.Огарева 4 курс</p>
+        </div>
     </div>
-
-<!--    line1 плохое именование-->
-    <div class="line1"></div>
-
-<!--    inf плохое именование-->
-    <div class="inf">Информация</div>
     <div class="info">
-        Уровень Английского B1
-<!--        СимберСофт -> SimbirSoft-->
-
-<!--        вместо <br> надо использовать отдельные <div>, br тег исключительно для разрыва строки в статьях-->
-        <br>Опыт программирования на React в “СимберСофт” 
-        <br>Узнал о “Codemasters” в группе “МатФак рулит”
-        <br>Цель посещения курсов: повышение квалификации
+        <h2>Информация</h2>
+        <div>
+            <p>Уровень Английского B1</p>
+            <p>Опыт программирования на React в “SimbirSoft”</p>
+            <p>Узнал о “Codemasters” в группе “МатФак рулит”</p>
+            <p>Цель посещения курсов: повышение своей квалификации</p>
+        </div>
     </div>
 </body>
 
